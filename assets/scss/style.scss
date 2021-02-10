@@ -1,0 +1,26 @@
+body{
+  font-family: Open Sans,sans-serif
+}
+
+.header{
+  padding: 10px 0;
+  &--logo{
+    max-width: 158px;
+  }
+  &_nav{
+    ul{
+      list-style: none;
+      display: flex;
+    }
+    &--contact{
+      background-color: #3498DB;
+      border: 0;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 13px 20px;
+    }
+  }
+}

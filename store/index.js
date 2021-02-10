@@ -34,7 +34,7 @@ export const actions = {
       }))
       commit('SET_EVENTS', events)
     } catch (err) {
-      console.error('getEvents', err)
+      // console.error('getEvents', err)
     }
   },
 }
