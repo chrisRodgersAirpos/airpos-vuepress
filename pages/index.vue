@@ -4,6 +4,7 @@
     <nuxt-link :to="`/events/`" class="btn-sm lg:btn btn-green mb-2 mr-2">
       Events
     </nuxt-link>
+    <ReviewWidget />
   </div>
 </template>
 
