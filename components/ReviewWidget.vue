@@ -16,6 +16,8 @@ export default {
         {
           hid: 'reviews',
           src: 'https://widget.reviews.io/rich-snippet-reviews-widgets/dist.js',
+          body: true,
+          async: true,
           defer: true,
         },
       ],
