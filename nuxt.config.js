@@ -46,7 +46,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.BASE_URL || 'http://vuepress.local'
+    baseURL: process.env.BASE_URL || 'https://vuepress.cjrodgers.co.uk'
   },
 
 
