@@ -1,3 +1,4 @@
+require('dotenv').config()
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -40,11 +41,12 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://vuepress.cjrodgers.co.uk/',
+    baseURL: process.env.BASE_URL || 'http://vuepress.local'
   },
 
 
