@@ -1,5 +1,6 @@
 export const state = () => ({
   events: [],
+  homeContent: [],
 })
 
 export const getters = {
@@ -13,6 +14,9 @@ export const getters = {
 export const mutations = {
   SET_EVENTS: (state, events) => {
     state.events = events
+  },
+  SET_HOME_CONTENT: (state, homeContent) => {
+    state.homeContent = homeContent
   },
 }
 
@@ -33,6 +37,15 @@ export const actions = {
         acf,
       }))
       commit('SET_EVENTS', events)
+    } catch (err) {
+      // console.error('getEvents', err)
+    }
+  },
+  async getHomeContent({ commit }) {
+    try {
+      const homeContent = await this.$axios.$get(`/wp-json/wp/v2/pages/22`)
+      this.homeContent = homeContent
+      commit('SET_HOME_CONTENT', homeContent)
     } catch (err) {
       // console.error('getEvents', err)
     }
