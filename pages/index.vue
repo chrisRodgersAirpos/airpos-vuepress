@@ -6,9 +6,25 @@
     </nuxt-link>
     <FeatureBlock />
     <ReviewWidget />
+    <TestimonialBlock />
   </div>
 </template>
 
-<script></script>
+<script>
+import { mapState, mapActions } from 'vuex'
+export default {
+  computed: {
+    ...mapState(['homeContent']),
+  },
+
+  created() {
+    this.getHomeContent()
+  },
+
+  methods: {
+    ...mapActions(['getHomeContent']),
+  },
+}
+</script>
 
 <style></style>
