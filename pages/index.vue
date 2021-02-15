@@ -10,21 +10,6 @@
   </div>
 </template>
 
-<script>
-import { mapState, mapActions } from 'vuex'
-export default {
-  computed: {
-    ...mapState(['homeContent']),
-  },
-
-  created() {
-    this.getHomeContent()
-  },
-
-  methods: {
-    ...mapActions(['getHomeContent']),
-  },
-}
-</script>
+<script></script>
 
 <style></style>

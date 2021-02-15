@@ -8,6 +8,9 @@
       >
         <h3>{{ testimonial.post_title }}</h3>
         <p>{{ testimonial.post_content }}</p>
+        <div v-if="testimonial.acf.test_input">
+          {{ testimonial.acf.test_input }}
+        </div>
       </div>
     </div>
   </div>

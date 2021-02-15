@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-body{
-  font-family: Open Sans,sans-serif
+body {
+  font-family: Open Sans, sans-serif;
 }
 
-.header{
+.header {
   padding: 10px 0;
-  &--logo{
+  &--logo {
     max-width: 158px;
   }
-  &_nav{
-    ul{
+  &_nav {
+    ul {
       list-style: none;
       display: flex;
       align-items: center;
     }
-    &--contact{
-      background-color: #3498DB;
-      border: 0;
-      color: #fff;
-      border-radius: 4px;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 700;
-      padding: 13px 20px;
+    &--contact {
+      a {
+        background-color: #3498db;
+        border: 0;
+        color: #fff!important;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 13px 20px;
+      }
     }
   }
 }

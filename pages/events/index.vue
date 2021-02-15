@@ -47,17 +47,14 @@ import { mapState, mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapState(['events']),
-    ...mapState(['header']),
     ...mapGetters(['sortedEvents']),
   },
 
   created() {
-    this.getHeader()
     this.getEvents()
   },
 
   methods: {
-    ...mapActions(['getHeader']),
     ...mapActions(['getEvents']),
   },
 }
