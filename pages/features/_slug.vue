@@ -1,9 +1,5 @@
 <template>
-  <div>
-    this is the slug
-    {{ event.title.rendered }}
-    {{ event.acf.speaker }}
-  </div>
+  <div>this is the features slug</div>
 </template>
 
 <script>
@@ -14,15 +10,15 @@ export default {
     }
   },
   computed: {
-    events() {
-      return this.$store.state.events
+    features() {
+      return this.$store.state.features
     },
-    event() {
-      return this.events.find((el) => el.slug === this.slug)
+    feature() {
+      return this.features.find((el) => el.slug === this.slug)
     },
   },
   created() {
-    this.$store.dispatch('getEvents')
+    this.$store.dispatch('getFeatures')
   },
 }
 </script>

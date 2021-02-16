@@ -13,7 +13,7 @@
           <b-dropdown-item
             v-for="(feature, index) in features"
             :key="index"
-            :href="`/features/${feature.slug}`"
+            :to="`/features/${feature.slug}`"
           >
             {{ feature.title.rendered }}
           </b-dropdown-item>
