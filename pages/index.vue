@@ -1,9 +1,8 @@
 <template>
   <div>
-    <p>this is the index</p>
-    <nuxt-link :to="`/events/`" class="btn-sm lg:btn btn-green mb-2 mr-2">
-      Events
-    </nuxt-link>
+    <div class="container">
+      <p>this is the Homepage</p>
+    </div>
     <FeatureBlock />
     <ReviewWidget />
     <TestimonialBlock />

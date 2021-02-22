@@ -1,5 +1,8 @@
 <template>
-  <div>this is the features slug</div>
+  <div class="container">
+    <p>this is the features slug</p>
+    <p>Title: {{ feature.title.rendered }}</p>
+  </div>
 </template>
 
 <script>
