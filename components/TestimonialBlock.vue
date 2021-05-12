@@ -7,9 +7,9 @@
         class="col-lg-4"
       >
         <h3>{{ testimonial.post_title }}</h3>
-        <p>{{ testimonial.post_content }}</p>
+        <div v-html="testimonial.post_content"></div>
         <div v-if="testimonial.acf.about_business">
-          {{ testimonial.acf.about_business }}
+          <div v-html="testimonial.acf.about_business"></div>
         </div>
       </div>
     </div>
