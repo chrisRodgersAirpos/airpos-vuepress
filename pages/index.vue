@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <p>This is the Homepage!</p>
+      <p>This is the Homepage</p>
     </div>
     <FeatureBlock />
     <ReviewWidget />
